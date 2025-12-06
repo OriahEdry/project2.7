@@ -1,8 +1,8 @@
 """
 author: Oriah Edry
 Program name: project 2.7
-Description:
-Date: 01/11/2025
+Description: the protocol for this project
+Date: 06/12/2025
 """
 
 import logging
@@ -63,3 +63,4 @@ def parse_photo_payload(payload):
     size = int.from_bytes(payload[:4], "big")
     image_data = payload[4:4 + size]
     return image_data
+
