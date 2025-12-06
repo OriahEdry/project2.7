@@ -1,3 +1,9 @@
+"""
+author: Oriah Edry
+Program name: project 2.7
+Description: the client side
+Date: 06/12/2025
+"""
 import socket
 import logging
 import protocol  # הפרוטוקול
@@ -96,3 +102,4 @@ if __name__ == "__main__":
     assert protocol.is_error(err_resp), "is_error should detect error"
     assert err_data == "error message", "extract_error_message should match"
     client_program()
+
