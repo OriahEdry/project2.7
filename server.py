@@ -1,8 +1,8 @@
 """
 author: Oriah Edry
 Program name: project 2.7
-Description:
-Date: 01/11/2025
+Description: the server
+Date: 06/12/2025
 """
 import socket
 import glob
@@ -182,4 +182,5 @@ if __name__ == "__main__":
     pyautogui.screenshot().save("screen.png")
     payload = send_photo()
     assert isinstance(payload, bytes), "send_photo should return bytes"
+
     os.remove("screen.png")
